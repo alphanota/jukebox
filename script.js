@@ -153,8 +153,8 @@ for (var i = 0; i < songLibrary.length; i++) {
 
     // decorate/fill in post div data with song info and media urls
     post.fill(song,songUrls);
-
-    document.body.appendChild(post.post);
+    var container = document.querySelector(".library-container");
+    container.appendChild(post.post);
 
 }
 
@@ -182,8 +182,6 @@ function fadeOut(obj,dur){
      {opacity: 0},dur
    );
 }
-
-
 
  $(".post").hover(
    function() {applyFadeEffect(this,fadeIn);},
@@ -215,8 +213,6 @@ playSong = function(sid){
 $(".post-add").click(function() {
   console.log("hello");
 });
-
-
 
 //
 // var fade_In = function(){
