@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="/home/angel/Downloads/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <img src="" class="bg bg0">
-  <img src="" class="bg bg1 transparent">
-<!--
+    <img src="" class="bg bg0">
+    <img src="" class="bg bg1 transparent">
+    <!--
   <audio controls="controls" id ="sputnik"> <source src="music/578626main_sputnik-beep.mp3"/></audio> -->
-  <header>
-    <div class="post" id="now-playing">
+    <header>
+        <form action="">
+            <input class="search-spotify" type="text" placeholder="Search Spotify">
+            <input class="submit-button" type="submit" value="Search" visibility="hidden">
+        </form>
+        <!-- <div class="post" id="now-playing">
       <div class="pic"></div>
       <div class="text">
         <h5>NASA</h5>
@@ -23,13 +29,30 @@
       </div>
         <i class="post-btn post-play"></i>
         <i class="post-btn post-add"></i>
+
+
+    </div> -->
+    </header>
+    <audio id="sputnik" src="music/sputnik.mp3"></audio>
+    <!-- <div class="playlist-container"></div> -->
+
+    <div class="extra-space"></div>
+
+    <div class="library-container">
+        <h2 id='txt-library'>My library</h2>
     </div>
-  </header>
-    <audio  id ="sputnik" src="music/sputnik.mp3"></audio>
 
-  <div class="library-container"></div>
 
-  <script src="script.js"></script>
+    <div class="extra-space"></div>
+    <footer>
+        <div class="controls">
+            <i class="control playlist-prev"></i>
+            <i class="control playlist-play"></i>
+            <i class="control playlist-next"></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
